@@ -48,17 +48,16 @@ class ProductView extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text("${collectionName.split(" ").first}\n${collectionName.split(" ").last}",
-                      style: Theme.of(context).textTheme.displayLarge!.copyWith(
+                      style: Theme.of(context).textTheme.titleMedium!.copyWith(
                           color: Colors.grey,
                           fontFamily: Constants.secondaryFont,
-                          fontSize: 18,
                           fontWeight: FontWeight.w500)),
                   Text(
-                    "\$$price",
-                    style: Theme.of(context).textTheme.displayLarge!.copyWith(
+                    "BDT $price",
+                    style: Theme.of(context).textTheme.labelLarge!.copyWith(
                         color: Colors.white,
                         fontFamily: Constants.secondaryFont,
-                        fontSize: 20,
+                        // fontSize: 20,
                         fontWeight: FontWeight.bold),
                   )
                 ],
