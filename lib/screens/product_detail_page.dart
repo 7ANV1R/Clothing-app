@@ -23,8 +23,7 @@ class ProductDetailsPage extends StatelessWidget {
                 child: Container(
                   height: 500,
                   decoration: BoxDecoration(
-                    borderRadius:
-                        const BorderRadius.vertical(bottom: Radius.circular(4)),
+                    borderRadius: const BorderRadius.vertical(bottom: Radius.circular(4)),
                     image: DecorationImage(
                       image: AssetImage(product.imagePath),
                       fit: BoxFit.cover,
@@ -57,7 +56,7 @@ class ProductDetailsPage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
-                        Text("\$${product.price}",
+                        Text("BDT ${product.price}",
                             style: const TextStyle(
                                 color: AppColors.tertiaryColor,
                                 fontSize: 50,
@@ -76,11 +75,8 @@ class ProductDetailsPage extends StatelessWidget {
                                     width: index == 3 ? 20 : 14,
                                     margin: const EdgeInsets.only(right: 4),
                                     decoration: BoxDecoration(
-                                        color: index == 3
-                                            ? AppColors.tertiaryColor
-                                            : Colors.grey,
-                                        borderRadius:
-                                            BorderRadius.circular(10)));
+                                        color: index == 3 ? AppColors.tertiaryColor : Colors.grey,
+                                        borderRadius: BorderRadius.circular(10)));
                               }),
                         )
                       ],
@@ -96,9 +92,7 @@ class ProductDetailsPage extends StatelessWidget {
                 child: Text(
                   product.description,
                   style: const TextStyle(
-                      color: AppColors.tertiaryColor,
-                      fontSize: 18,
-                      fontFamily: Constants.secondaryFont),
+                      color: AppColors.tertiaryColor, fontSize: 18, fontFamily: Constants.secondaryFont),
                 ),
               ),
             ],
@@ -110,10 +104,8 @@ class ProductDetailsPage extends StatelessWidget {
                 margin: const EdgeInsets.all(16),
                 height: 50,
                 width: 50,
-                decoration: const BoxDecoration(
-                    shape: BoxShape.circle, color: AppColors.primaryColor),
-                child:
-                    const Icon(Icons.arrow_back_rounded, color: Colors.white),
+                decoration: const BoxDecoration(shape: BoxShape.circle, color: AppColors.primaryColor),
+                child: const Icon(Icons.arrow_back_rounded, color: Colors.white),
               ),
             ),
           ),
@@ -128,8 +120,7 @@ class ProductDetailsPage extends StatelessWidget {
               height: 60,
               padding: const EdgeInsets.symmetric(horizontal: 100),
               color: AppColors.accentColor,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(18)),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
               child: const Text(
                 "BUY NOW",
                 style: TextStyle(
@@ -142,8 +133,7 @@ class ProductDetailsPage extends StatelessWidget {
             Container(
               height: 60,
               width: 50,
-              decoration: const BoxDecoration(
-                  color: Colors.white, shape: BoxShape.circle),
+              decoration: const BoxDecoration(color: Colors.white, shape: BoxShape.circle),
               child: Icon(
                 Icons.bookmark_border_outlined,
                 color: Colors.grey.shade700,
@@ -164,8 +154,7 @@ class CurvePath extends CustomClipper<Path> {
 
     Path path = Path();
     path.lineTo(0, h * 0.85);
-    path.quadraticBezierTo(
-        size.width * 0.5, size.height, size.width, size.height * 0.85);
+    path.quadraticBezierTo(size.width * 0.5, size.height, size.width, size.height * 0.85);
     path.lineTo(w, 0);
     path.close();
 

@@ -103,7 +103,7 @@ class _CollectionDetailPageState extends State<CollectionDetailPage> {
                         BoxDecoration(borderRadius: BorderRadius.circular(25), color: AppColors.accentColor),
                     child: Center(
                       child: Text(
-                        "\$${widget.collectionType.collectionProducts[pageIndex].price}",
+                        "BDT ${widget.collectionType.collectionProducts[pageIndex].price}",
                         style: const TextStyle(fontSize: 26, color: Colors.white),
                       ),
                     ),
