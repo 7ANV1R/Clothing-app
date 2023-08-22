@@ -1,3 +1,4 @@
+import 'package:clothing_app/screens/search_page.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -74,7 +75,13 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                         ])),
                   ),
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const SearchPage(),
+                          ));
+                    },
                     icon: const Icon(
                       FontAwesomeIcons.magnifyingGlass,
                       size: 56,
